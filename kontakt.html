@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valve - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.svg">
+	<meta name="robots" content="all">
+	<meta name="description" content="Strona o Vancouver - mieście w Kanadzie, jego atrakcjach, galerii zdjęć, mediach i ciekawostkach.">
+	<meta name="keywords" content="Vancouver, Kanada, Miasto, Atrakcje, Galeria, Media">
+	<meta name="author" content="Mateusz Kiepuszewski">
+	<meta name="copyright" content="Copyright Mateusz Kiepuszewski 2025">
+	<meta name="generator" content="Visual Studio Code">
+	<meta name="creation-date" content="19.10.2025">
+	<meta name="expires" content="never">
+	<meta name="last-modified" content="23.10.2025">
+	<meta name="reply-to" content="mateusz.kiepuszewski@tm1.edu.pl">
+</head>
+<body>
+    <div class="menu-toggle" id="menuToggle">
+        <img src="images/icon.svg">
+    </div>
+
+    <nav class="topnav" id="topnav">
+        <a href="index.html">Strona główna</a>
+        <a href="galeria.html">7 Najlepszych gier Valve</a>
+        <a href="historia.html">Histoia Steam</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+        <a href="dodatki.html">Dodatki</a>
+    </nav>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/valve.svg" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="galeria.html">7 Najlepszych gier Valve</a></li>
+            <li><a href="historia.html">Historia Steam</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="dodatki.html">Dodatki</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <header>
+            <h1 id="start">Kontakt z Vancouver</h1>
+            <p>Skontaktuj się z nami i dowiedz się więcej o mieście</p>
+            <a href="#ankieta">Ankieta </a>|<a href="#mapa"> Mapa</a>
+        </header>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Ankieta o Vancouver</h2>
+                <p>Oceń swoje doświadczenia z odwiedzin Vancouver:</p>
+                
+                <form id="ankieta">
+                    <div class="form-group">
+                        <label for="name">Imię i nazwisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adres e-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="visit">Czy odwiedziłeś/aś Vancouver?</label>
+                        <select id="visit" name="visit">
+                            <option value="tak">Tak</option>
+                            <option value="nie">Nie</option>
+                            <option value="planuje">Planuję odwiedzić</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Jakie atrakcje najbardziej Cię zainteresowały?</label><br>
+                        <div>
+                            <input type="checkbox" id="park" name="interests" value="park">
+                            <label for="park">Stanley Park</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mountain" name="interests" value="mountain">
+                            <label for="mountain">Góry</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="beach" name="interests" value="beach">
+                            <label for="beach">Plaże</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="culture" name="interests" value="culture">
+                            <label for="culture">Kultura</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Oceń Vancouver w skali 1-10:</label>
+                        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+                        <span id="ratingValue">5</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Twoje komentarze:</label>
+                        <textarea id="comments" name="comments" placeholder="Podziel się swoimi wrażeniami..."></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-send">Wyślij</button>
+                        <button type="reset" class="btn-clear">Wyczyść</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="uparr"><a href="#start"><img src="images/uparr.svg"></a></div>
+        <footer>
+            <p>&copy; 2025 Strona o Vancouver. Wszystkie prawa zastrzeżone.</p>
+            <p><a href="index.html">Powrót do strony głównej</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        const ratingSlider = document.getElementById('rating');
+        const ratingValue = document.getElementById('ratingValue');
+        
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        ratingSlider.addEventListener('input', () => {
+            ratingValue.textContent = ratingSlider.value;
+        });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Dziękujemy za wypełnienie ankiety!');
+            this.reset();
+            ratingValue.textContent = '5';
+        });
+    </script>
+</body>
+</html>

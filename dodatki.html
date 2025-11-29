@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valve - Dodatki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.svg">
+	<meta name="robots" content="all">
+	<meta name="description" content="Strona o Vancouver - mieście w Kanadzie, jego atrakcjach, galerii zdjęć, mediach i ciekawostkach.">
+	<meta name="keywords" content="Vancouver, Kanada, Miasto, Atrakcje, Galeria, Media">
+	<meta name="author" content="Mateusz Kiepuszewski">
+	<meta name="copyright" content="Copyright Mateusz Kiepuszewski 2025">
+	<meta name="generator" content="Visual Studio Code">
+	<meta name="creation-date" content="19.10.2025">
+	<meta name="expires" content="never">
+	<meta name="last-modified" content="23.10.2025">
+	<meta name="reply-to" content="mateusz.kiepuszewski@tm1.edu.pl">
+</head>
+<body>
+    <div class="menu-toggle" id="menuToggle">
+        <img src="images/icon.svg">
+    </div>
+
+    <nav class="topnav" id="topnav">
+        <a href="index.html">Strona główna</a>
+        <a href="galeria.html">7 Najlepszych gier Valve</a>
+        <a href="historia.html">Histoia Steam</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="dodatki.html" class="active">Dodatki</a>
+    </nav>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/valve.svg" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="galeria.html">7 Najlepszych gier Valve</a></li>
+            <li><a href="historia.html">Historia Steam</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="dodatki.html" class="active">Dodatki</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <header>
+            <h1 id="start">Dodatki</h1>
+            <p>Filmy, muzyka itd.</p>
+        </header>
+
+        <div class="media-container">
+            <div class="video-container">
+                <h2>Zapowiedź Valve Hardware</h2>
+                <p>Na filmie Valve przedstawia swoje przyszłe urządzenia</p>
+                <iframe height="420" src="https://www.youtube.com/embed/OmKrKTwtukE?si=2Osi5awwckg9hOHb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <div class="music-container">
+                <h2>Muzyka od Valve</h2>
+                <p>Słynna muzyka grająca w napisach końcowych gry Portal 2:</p>
+                <audio controls>
+                    <source src="media/credits.mp3" type="audio/mpeg">
+                    Twoja przeglądarka nie obsługuje tagu audio.
+                </audio>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1198.0892292036224!2d-122.2009541904934!3d47.61409167289421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906c8634e897f1%3A0xf1431ef8927eb6e4!2sValve!5e0!3m2!1spl!2spl!4v1764434046076!5m2!1spl!2spl" height="400px" style="border: 0;"></iframe>
+        </div>
+
+        <div class="uparr"><a href="#start"><img src="images/uparr.svg"></a></div>
+        <footer>
+            <p>&copy; 2025 Strona o Valve. Wszystkie prawa zastrzeżone.</p>
+            <p><a href="index.html">Powrót do strony głównej</a></p>
+        </footer>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+        
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
