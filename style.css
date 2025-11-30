@@ -557,7 +557,7 @@ iframe {
     border-radius: 10px;
 }
 
-.historia hr, h3 {
+.historia hr, .historia h3 {
     margin-top: 20px;
 }
 
