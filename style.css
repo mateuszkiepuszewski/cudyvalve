@@ -549,6 +549,18 @@ iframe {
 }
 
 
+.historia {
+    max-width: 70%;
+    margin: 30px auto;
+    padding: 20px 35px;
+    background-color: #181818;
+    border-radius: 10px;
+}
+
+.historia hr, h3 {
+    margin-top: 20px;
+}
+
 /*responsywność*/
 @media screen and (min-width: 1200px) {
     .menu-toggle {
@@ -609,6 +621,9 @@ iframe {
     .contact-container {
         max-width: 90%;
     }
+    .historia {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -657,6 +672,9 @@ iframe {
         max-width: 100%;
     }
     .contact-container {
+        max-width: 95%;
+    }
+    .historia {
         max-width: 95%;
     }
 }
