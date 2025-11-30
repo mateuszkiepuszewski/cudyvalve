@@ -26,8 +26,8 @@
         <a href="index.html">Strona główna</a>
         <a href="galeria.html">7 Najlepszych gier Valve</a>
         <a href="historia.html">Histoia Steam</a>
-        <a href="kontakt.html" class="active">Kontakt</a>
         <a href="dodatki.html">Dodatki</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
     </nav>
 
     <nav class="sidebar" id="sidebar">
@@ -38,80 +38,75 @@
             <li><a href="index.html">Strona główna</a></li>
             <li><a href="galeria.html">7 Najlepszych gier Valve</a></li>
             <li><a href="historia.html">Historia Steam</a></li>
-            <li><a href="kontakt.html" class="active">Kontakt</a></li>
             <li><a href="dodatki.html">Dodatki</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
         </ul>
     </nav>
 
     <div class="main-content">
         <header>
-            <h1 id="start">Kontakt z Vancouver</h1>
-            <p>Skontaktuj się z nami i dowiedz się więcej o mieście</p>
-            <a href="#ankieta">Ankieta </a>|<a href="#mapa"> Mapa</a>
+            <h1 id="start">Kontakt</h1>
+            <p>Zostaw swoją opnię na temat strony</p>
         </header>
 
         <div class="contact-container">
-            <div class="contact-form">
-                <h2>Ankieta o Vancouver</h2>
-                <p>Oceń swoje doświadczenia z odwiedzin Vancouver:</p>
-                
-                <form id="ankieta">
-                    <div class="form-group">
-                        <label for="name">Imię i nazwisko:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Adres e-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="visit">Czy odwiedziłeś/aś Vancouver?</label>
-                        <select id="visit" name="visit">
-                            <option value="tak">Tak</option>
-                            <option value="nie">Nie</option>
-                            <option value="planuje">Planuję odwiedzić</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Jakie atrakcje najbardziej Cię zainteresowały?</label><br>
-                        <div>
-                            <input type="checkbox" id="park" name="interests" value="park">
-                            <label for="park">Stanley Park</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="mountain" name="interests" value="mountain">
-                            <label for="mountain">Góry</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="beach" name="interests" value="beach">
-                            <label for="beach">Plaże</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="culture" name="interests" value="culture">
-                            <label for="culture">Kultura</label>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Oceń Vancouver w skali 1-10:</label>
-                        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
-                        <span id="ratingValue">5</span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="comments">Twoje komentarze:</label>
-                        <textarea id="comments" name="comments" placeholder="Podziel się swoimi wrażeniami..."></textarea>
-                    </div>
-                    
-                    <div class="form-buttons">
-                        <button type="submit" class="btn-send">Wyślij</button>
-                        <button type="reset" class="btn-clear">Wyczyść</button>
-                    </div>
-                </form>
+            <h2>Kontakt i Twoja Opinia</h2>
+
+            <div class="contact-info">
+                <h3>Skontaktuj się z nami</h3>
+                <p>Jeśli masz uwagi do strony, propozycje nowych sekcji lub historyczne ciekawostki o Valve, napisz do nas!</p>
+                <p><strong>Adres E-mail:</strong> <a href="mailto:mateusz.kiepuszewski@tm1.edu.pl">mateusz.kiepuszewski@tm1.edu.pl</a></p>
+                <p>Prosimy o wypełnienie poniższej ankiety. Twoja opinia jest dla nas cenna!</p>
             </div>
+
+        <div class="survey-section">
+            <h3>Ankieta: Największe Cuda Valve</h3>
+
+            <form action="mailto:mateusz.kiepuszewski@tm1.edu.pl" method="POST">
+            
+                <label for="imie">Twoje Imię (opcjonalnie):</label>
+                <input type="text" id="imie" name="imie" placeholder="Wpisz swoje imię">
+
+                <label for="email">Twój Adres E-mail (opcjonalnie):</label>
+                <input type="email" id="email" name="email" placeholder="Wpisz swój adres e-mail">
+
+
+                <h3>1. Jaki aspekt działalności Valve uważasz za najważniejszy?</h3>
+                <div class="radio-group">
+                    <input type="radio" id="steam" name="najwazniejszy" value="Steam">
+                    <label for="steam" style="font-weight: normal;">Platforma Steam (sprzedaż, usługi)</label><br>
+                    <input type="radio" id="gry" name="najwazniejszy" value="Gry">
+                    <label for="gry" style="font-weight: normal;">Gry (Half-Life, Portal, CS)</label><br>
+                    <input type="radio" id="sprzet" name="najwazniejszy" value="Sprzet">
+                    <label for="sprzet" style="font-weight: normal;">Innowacje sprzętowe (Steam Deck, VR)</label><br>
+                </div>
+
+                <h3>2. Które z gier Valve są dla Ciebie absolutnymi, niezapomnianymi arcydziełami? (Wybierz dowolną liczbę)</h3>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="hl2_c" name="arcydzielo[]" value="HL2">
+                    <label for="hl2_c" style="font-weight: normal;">Half-Life 2</label><br>
+                    <input type="checkbox" id="portal2_c" name="arcydzielo[]" value="Portal2">
+                    <label for="portal2_c" style="font-weight: normal;">Portal 2</label><br>
+                    <input type="checkbox" id="cs_c" name="arcydzielo[]" value="CS">
+                    <label for="cs_c" style="font-weight: normal;">Counter-Strike (seria)</label><br>
+                    <input type="checkbox" id="dota2_c" name="arcydzielo[]" value="Dota2">
+                    <label for="dota2_c" style="font-weight: normal;">Dota 2</label><br>
+                    <input type="checkbox" id="tf2_c" name="arcydzielo[]" value="TF2">
+                    <label for="tf2_c" style="font-weight: normal;">Team Fortress 2</label><br>
+                    <input type="checkbox" id="l4d2_c" name="arcydzielo[]" value="L4D2">
+                    <label for="l4d2_c" style="font-weight: normal;">Left 4 Dead 2</label><br>
+                    <input type="checkbox" id="alyx_c" name="arcydzielo[]" value="Alyx">
+                    <label for="alyx_c" style="font-weight: normal;">Half-Life: Alyx</label><br>
+                </div>
+
+                <h3><label for="valve_time">3. Co sądzisz o koncepcji "Valve Time" i rzadkim wydawaniu nowych, głównych tytułów?</label></h3>
+                <textarea id="valve_time" name="valve_time" rows="6" placeholder="Wpisz swoją opinię..."></textarea>
+            </div>
+                <button type="submit">Wyślij Ankietę</button>
+                <button type="reset">Resetuj Formularz</button>
+
+            </form>
+
         </div>
 
         <div class="uparr"><a href="#start"><img src="images/uparr.svg"></a></div>

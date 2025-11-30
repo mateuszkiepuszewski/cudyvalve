@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: #404848;
+    color: #6a7777;
 }
 
 a:visited {
@@ -391,73 +391,84 @@ footer a:hover {
 
 /* kontakt form */
 .contact-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.contact-form {
-    background: white;
-    padding: 30px;
+    max-width: 80%;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    background-color: #181818;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.contact-info, .survey-section {
+    background-color: #303838;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.form-group label {
-    display: block;
+form h3 {
+    margin-top: 20px;
     margin-bottom: 5px;
-    font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
+input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-.form-group textarea {
-    height: 150px;
+.radio-group, .checkbox-group {
+    margin-top: 5px;
+}
+
+.radio-group input[type="radio"], .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     resize: vertical;
 }
 
-.form-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.form-buttons button {
-    flex: 1;
-    padding: 12px;
+button {
+    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
 }
 
-.btn-send {
-    background: #fff;
+button[type="submit"] {
+    margin-left: 5px;
+    background-color: #ff4500;
     color: white;
 }
 
-.btn-clear {
-    background: #e74c3c;
+button[type="submit"]:hover {
+    background-color: #e03a00;
+}
+
+button[type="reset"] {
+    background-color: #777;
     color: white;
 }
 
-.btn-send:hover {
-    background: #2980b9;
+button[type="reset"]:hover {
+    background-color: #555;
 }
 
-.btn-clear:hover {
-    background: #c0392b;
-}
+
 
 
 /* media */
@@ -594,7 +605,10 @@ iframe {
         max-width: 100%;
     }
     .table-container {
-        max-width: 100%;
+        max-width: 90%;
+    }
+    .contact-container {
+        max-width: 90%;
     }
 }
 
@@ -642,5 +656,8 @@ iframe {
     }
     .table-container {
         max-width: 100%;
+    }
+    .contact-container {
+        max-width: 95%;
     }
 }
