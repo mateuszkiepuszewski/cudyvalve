@@ -54,8 +54,8 @@ a:visited {
 }
 
 .menu-toggle:hover {
-    background: #fff;
-    transform: rotate(90deg);
+    background: #303838;
+    transform: rotate(180deg);
 }
 
 .uparr {
@@ -77,7 +77,7 @@ a:visited {
 }
 
 .uparr:hover {
-    background: #fff;
+    background: #303838;
     transform: translateY(-10px);
 }
 
@@ -194,7 +194,7 @@ h2 {
 .intro {
     display: flex;
     padding: 20px 20px;
-    max-width: 75%;
+    max-width: 85%;
     margin: 20px auto;
 }
 
@@ -236,7 +236,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -653,7 +653,7 @@ iframe {
         max-width: none;
     }
     header {
-        padding: 50px 20px;
+        padding: 50px 5px;
     }
     .gallery-container {
         width: 100%;
@@ -676,5 +676,8 @@ iframe {
     }
     .historia {
         max-width: 95%;
+    }
+    #optional {
+        display: none;
     }
 }
