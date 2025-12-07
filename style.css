@@ -15,6 +15,14 @@ a {
     color: #6a7777;
 }
 
+.brightlink {
+    color: #404848;
+}
+
+.brightlink:visited {
+    color: #404848;
+}
+
 a:visited {
     color: #303838;
 }
